@@ -1,0 +1,446 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*FLEXBOX CLASSES*/
+/* Display Flex */
+.d-flex {
+    display: flex;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+/* Flex Direction */
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* Flex Wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/* Justify Content (horizontaal)*/
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+/* Align Items (verticaal) */
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+/* Align Content */
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-between {
+    align-content: space-between;
+}
+
+.align-content-around {
+    align-content: space-around;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+/* Align Self */
+.align-self-auto {
+    align-self: auto;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-baseline {
+    align-self: baseline;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+/* Order */
+.order-first {
+    order: -1;
+}
+
+.order-last {
+    order: 13;
+}
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
+}
+
+.order-5 {
+    order: 5;
+}
+
+.order-6 {
+    order: 6;
+}
+
+.order-7 {
+    order: 7;
+}
+
+.order-8 {
+    order: 8;
+}
+
+.order-9 {
+    order: 9;
+}
+
+.order-10 {
+    order: 10;
+}
+
+.order-11 {
+    order: 11;
+}
+
+.order-12 {
+    order: 12;
+}
+
+/* Grow and Shrink */
+.flex-grow-0 {
+    flex-grow: 0;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+/* EIGEN CSS */
+/* Main componentne */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #0e0f12;
+    color: white;
+}
+
+header, #hero, footer, .sectionwithin {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+footer{
+    margin:20px auto;
+}
+
+nav{
+    margin: 20px 0px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+p {
+    color: #8c9694;
+}
+
+article h3 {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* IDs */
+
+#headerwrap, .sectionwrap {
+    border-bottom: 1px solid grey;
+}
+
+#navdiv{
+    padding-right:16px;
+    gap:18px;
+}
+
+#headerblock{
+    width: 40px;
+    padding-bottom: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#headertitle{
+    color: #69a2ff;
+    font-weight: 700;
+}
+
+#titelp{
+    width: 680px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#mainbuttons{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#message{
+    padding-bottom: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#formstyle{
+    border-radius: 10px;
+    background-color: #202020;
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/* Classes */
+.gradient-text{
+    background: linear-gradient(90deg, #7aa2ff 0%, #6cf0c2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
+
+.inputstyle{
+    width: 50%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: #6c757d;
+}
+
+.greentext{
+    color: lawngreen;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+
+.pborder{
+    border: 1px solid #888;
+    border-radius: 20px;
+    margin-right: 15px;
+    padding: 10px 10px;
+}
+
+.portfolioheader{
+    color: #69a2ff;
+}
+
+.dottedpgreen{
+    margin-top: 10px;
+    border: 1px dotted lightgreen;
+    border-radius: 10px;
+    padding: 4px 4px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.nostylea{
+    color: black;
+    text-decoration: none;
+}
+
+.gradbluegreen {
+    background-image: linear-gradient(to bottom right, dodgerblue, lightgreen);
+}
+
+.btn-brand {
+    color: black;
+    background: #5b7cff;
+    border: 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.navlink {
+    color: white;
+    text-decoration: none;
+}
+
+.knop {
+    border: 2px solid transparent;
+    background: #5b7cff;
+    padding: 15px 18px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-right: 15px;
+}
+
+.gbutton {
+    border: 1px solid #8c9694;
+    background: transparent;
+    padding: 15px 18px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.articlebigblock {
+    text-align: left;
+    margin-top: 20px;
+    width: 48%;
+    border: 1px solid #6c757d;
+    border-radius: 25px;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+    background-color: #202020;
+}
+
+.articleblock {
+    text-align: left;
+    margin-top: 20px;
+    width: 33%;
+    border: 1px solid #6c757d;
+    border-radius: 25px;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+    background-color: #202020;
+    margin-right: 20px;
+}
+
+.lineimg{
+    width: 30px;
+    height: 100px;
+}
+
+.articlep {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.articlepbig{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.articleimg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
